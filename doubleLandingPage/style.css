@@ -1,0 +1,84 @@
+*{
+     padding:0;
+     margin:0;
+     box-sizing:border-box;
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+}
+.container{
+     height:100%;
+     width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* position:relative; */
+}
+
+.places{
+      text-align:center;
+     position:absolute;
+     width:50%;
+     height:100%;
+     padding-top:100px;
+    background-position:center;
+     background-size:cover;
+     transition:width 1s ease-in-out 0s;
+     flex-wrap:wrap;
+     /* min-width:410px; */
+    
+}
+.left{
+     left:0;
+     background-image:url('https://www.worldatlas.com/r/w1200/upload/ce/5d/2a/shutterstock-540056203.jpg');
+}
+.right{
+     right:0;
+     background-image:url('https://etimg.etb2bimg.com/photo/115997634.cms');
+}
+
+h1{
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:4.8rem;
+    backdrop-filter:brightness(50%);
+    color:white;
+    white-space:nowrap;  /* new on lean*/
+}
+button{
+ padding:10px;
+ cursor: pointer;
+ font-size:1.5rem;
+ border:1px solid black;
+ border-radius:2px;
+ transition:background-color,transform 0.8s;
+ margin-top:3rem;
+ white-space:nowrap;
+}
+button:hover,button:active{
+     background-color:black;
+     color:snow;
+     transform:scale(1.10);
+}
+
+.active-left .left{
+     width:75%;
+}
+.active-left .right{
+     width:25%;
+}
+.active-right .left{
+     width:25%;
+}
+.active-right .right{
+     width:75%;
+}
+
+@media screen and (max-width:650px) {
+}
