@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methode one tailwen css</title>
+    <!-- taliwin website  page method one is cdn-->    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+       :root{
+          color:aqua;
+       }
+    </style>
+</head>
+<body>
+<!-- 
+  *class    - utility-first
+  *variants - addind state chanages and responsivess
+  *layers   - three types in the tailwin 
+  *response
+  *drak mood - ?
+  *typography
+
+ -->   
+<!-- color 100 to 900 valuse--> 
+      <h3 class="text-pink-400 font-bold sm:text-3xl bg-yellow-300 md:text-4xl lg:text-7xl  lg:bg-red-800 hover:text-green-400">title</h3>
+      <p class="bg-green-900 p-40 text-white hover:bg-yellow-500 cursor-pointer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolores aliquam sapiente dicta non esse sit iure odit architecto nostrum. Nam hic, voluptatibus dolor eligendi veniam sed voluptas. Sunt, velit!</p>
+
+<!--respones
+   *sm-640px (min-size)- tablets
+   *md-768px (min-size)- laptops
+   *lg-1024px (min-size)- desktops
+   *xl-1280px (min-size)- extra-large
+   *2xl-1536px (min-size)- Ultra-wide screen
+ 
+-->
+      <!-- respones with grid -->
+         <div class="grid grid-cols-1 mt-5  md:grid-cols-2  lg:grid-cols-3 p-6 gap-4" >
+            <div class="bg-pink-900  p-4 rounded">Item 1</div>
+            <div class="bg-yellow-400 p-4 rounded">Item 2</div>
+            <div class="bg-red-400 p-4 rounded">Item 3</div>
+         </div>
+        <br>
+         <p class="hidden md:block text-green-500 text-4xl "> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam officia ab autem ad! Quod delectus nostrum quidem, repellat unde natus. Laboriosam nam, optio rerum neque voluptatum aliquid omnis pariatur sit!</p>
+      
+      <!-- response with flex -->
+         <div class="flex flex-col gap-5 mt-10 md:flex-row p-3">
+             <!-- BG color inculding to opactity -->
+             <div class="bg-blue-300/30 text-white/90 text-center p-6 flex-1"> box1</div>
+             <div class="bg-blue-300/80 text-white text-center p-6 flex-1"> box2</div>
+         </div>
+   <hr>
+   <br>
+     
+
+</body>
+</html>
