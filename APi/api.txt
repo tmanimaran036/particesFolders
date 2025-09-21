@@ -1,0 +1,26 @@
+//api
+
+ // How do work website  
+
+   * server(24/7) work erukum with help in internet
+   * server la nama make web appliction set paru tha - hosting(deployment)
+   * server set panra every webside ku address erukum .it call(ip address)
+   * the ip address is number so ip address ku our name(dommain name) map panniru panga 
+ 
+  real word example 
+  
+  (requst)                           (api)               (resquest recevied)
+  Chrome --> google.com(ty)         ( http)         ---> server 
+      |                                                      |
+  ( respones recevied)  <---                        <--- (respones return to clidnt)
+
+___________________________________________________________________________________________________________
+ 
+ // how do work in api
+
+   * handle a json data type in resquest and respones for 
+   * used to http (protocal - set of ruls)
+
+   // http method in req & respones
+   
+   * get ,post ,put,patch,delete,option
